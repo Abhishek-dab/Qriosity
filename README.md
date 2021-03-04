@@ -42,5 +42,6 @@ Total users LeaderBoard |
 # Links:
 
 * [Video Link](https://youtu.be/MLvR5IKvHxs)
+* [itsallwidgets](https://itsallwidgets.com/qriosity)
 
 
