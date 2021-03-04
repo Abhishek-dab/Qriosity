@@ -1,6 +1,6 @@
 # Qriosity
 
-A quiz app made with flutter.
+A quiz app made with ❤ in Flutter and Firebase.
 * Built on top of --> [Quizzler](https://github.com/londonappbrewery/quizzler-flutter)
 
 ## Quiz Features:
