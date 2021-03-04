@@ -10,9 +10,8 @@ A quiz app made with flutter.
 - [x] Answers are shown at the bottom of the screen after attempting
 - [x] After the quiz is over, the score is shown where the user can either give the quiz again or go back to the menu
 - [x] User can see own best score in different categories.
-- [x] Different Categories
 - [x] Multiple Users
-- [x] Result Page
+
 ## Scores feature
 - [x] Users can attempt the quiz of any topic multiple amounts of times but the first score is only recorded for each topic
 - [x] Recorded scores can be seen in the rank list with other users who have given the quiz
