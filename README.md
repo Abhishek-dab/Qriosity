@@ -28,7 +28,7 @@ SignIn Screen | Home Page | GK Quiz
 <img src="images/b.jpeg" width="250" height="400" >   | <img src="images/a.jpeg" width="250" height="400" > |<img src="images/g.jpeg" width="250" height="400" >  |  
 
 
-After attempting quiz | LeaderBoard | English LeaderBoard 
+After attempting quiz | LeaderBoard | English Quiz LeaderBoard 
 :-------------------------:|:-------------------------:|:-------------------------:|
 <img src="images/c.jpeg" width="250" height="400" >   |  <img src="images/d.jpeg" width="250" height="400" >  |  <img src="images/e.jpeg" width="250" height="400" >  
 
