@@ -35,6 +35,7 @@ android {
         applicationId "co.appbrewery.quizzler"
         minSdkVersion 16
         targetSdkVersion 29
+        multiDexEnabled true
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
@@ -52,5 +53,6 @@ flutter {
 }
 
 dependencies {
-
+    implementation 'com.android.support:multidex:1.0.3'
 }
+apply plugin: 'com.google.gms.google-services'

@@ -11,7 +11,14 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^0.1.2
-  #TODO: Step 1 - Add the rFlutter Alert package as a dependency here and use "Packages get".
+  rflutter_alert: ^1.1.0
+  google_fonts: ^1.1.2
+  firebase_auth: ^0.20.0+1
+  cloud_firestore: ^0.16.0
+  provider: ^4.3.3
+  flutter_spinkit: "^4.1.2"
+  shared_preferences: ^0.5.12+4
+  back_button_interceptor: ^4.4.2
 
 dev_dependencies:
   flutter_test:

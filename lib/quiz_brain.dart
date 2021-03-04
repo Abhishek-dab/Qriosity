@@ -31,23 +31,129 @@ class QuizBrain {
         true),
   ];
 
-  void nextQuestion() {
-    if (_questionNumber < _questionBank.length - 1) {
-      _questionNumber++;
+  List<Question> _csBank = [
+    Question(
+        'The CPU is responsible for executing instructions for the computer',
+        true),
+    Question(
+        'Main memory is a place where the programs and data are store temporarily during processing',
+        true),
+    Question(
+        'Secondary storage, similar to main memory, also stores programs and data',
+        true),
+    Question(
+        'Each computer has its own machine language which is made of streams of 0s and 1s.',
+        true),
+    Question(
+        'Symbolic languages use mnemonics to represent the various machine language instructions.',
+        true),
+    Question('It is illegal to pee in the Ocean in Portugal.', true),
+    Question(
+        'No piece of square dry paper can be folded in half more than 7 times.',
+        false),
+    Question(
+        'In London, UK, if you happen to die in the House of Parliament, you are technically entitled to a state funeral, because the building is considered too sacred a place.',
+        true),
+  ];
+
+  List<Question> _engBank = [
+    Question('A RIVER is bigger than a STREAM.', true),
+    Question('There are one thousand years in a CENTURY.', false),
+    Question(' FOUNDED is the past tense of FOUND.', true),
+    Question(' ANSWER can be used as a noun and a verb.', true),
+    Question('SCARLET is a brilliant red colour.', true),
+    Question('USED TO DOING and USED TO DO mean the same thing.', false),
+    Question('You can use IMPROVE as a noun and as a verb.', false),
+    Question(' DOZEN is equivalent to 20.', false),
+    Question('The past tense of FIND is FOUND.', true),
+    Question(' EQUIVALENT TO is (more or less) the same as EQUAL TO.', true),
+  ];
+
+  List<Question> _matBank = [
+    Question('2+2=4', true),
+    Question('4+4=8', true),
+    Question('9+9=19', false),
+    Question('19+9=38', false),
+    Question('9+129=138', true),
+    Question('9-19=10', false),
+    Question('50+109=159', true),
+    Question('91+19=119', false),
+    Question('9+90=98', false),
+  ];
+
+  void nextQuestion(int i) {
+    if (i == 1) {
+      if (_questionNumber < _questionBank.length - 1) {
+        _questionNumber++;
+      }
+    } else if (i == 2) {
+      if (_questionNumber < _csBank.length - 1) {
+        _questionNumber++;
+      }
+    } else if (i == 3) {
+      if (_questionNumber < _matBank.length - 1) {
+        _questionNumber++;
+      }
+    } else if (i == 4) {
+      if (_questionNumber < _engBank.length - 1) {
+        _questionNumber++;
+      }
     }
   }
 
-  String getQuestionText() {
-    return _questionBank[_questionNumber].questionText;
+  String getQuestionText(int i) {
+    if (i == 1) {
+      return _questionBank[_questionNumber].questionText;
+    } else if (i == 2) {
+      return _csBank[_questionNumber].questionText;
+    } else if (i == 3) {
+      return _matBank[_questionNumber].questionText;
+    } else if (i == 4) {
+      return _engBank[_questionNumber].questionText;
+    }
   }
 
-  bool getCorrectAnswer() {
-    return _questionBank[_questionNumber].questionAnswer;
+  bool getCorrectAnswer(int i) {
+    if (i == 1) {
+      return _questionBank[_questionNumber].questionAnswer;
+    } else if (i == 2) {
+      return _csBank[_questionNumber].questionAnswer;
+    } else if (i == 3) {
+      return _matBank[_questionNumber].questionAnswer;
+    } else if (i == 4) {
+      return _engBank[_questionNumber].questionAnswer;
+    }
   }
 
-  //TODO: Step 3 Part A - Create a method called isFinished() here that checks to see if we have reached the last question. It should return (have an output) true if we've reached the last question and it should return false if we're not there yet.
+  bool isFinished(int i) {
+    if (i == 1) {
+      if (_questionNumber >= _questionBank.length - 1) {
+        return true;
+      } else {
+        return false;
+      }
+    } else if (i == 2) {
+      if (_questionNumber >= _csBank.length - 1) {
+        return true;
+      } else {
+        return false;
+      }
+    } else if (i == 3) {
+      if (_questionNumber >= _matBank.length - 1) {
+        return true;
+      } else {
+        return false;
+      }
+    } else if (i == 4) {
+      if (_questionNumber >= _engBank.length - 1) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
 
-  //TODO: Step 3 Part B - Use a print statement to check that isFinished is returning true when you are indeed at the end of the quiz and when a restart should happen.
-
-  //TODO: Step 4 Part B - Create a reset() method here that sets the questionNumber back to 0.
+  void reset() {
+    _questionNumber = 0;
+  }
 }

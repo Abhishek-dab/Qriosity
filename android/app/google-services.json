@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "755567058800",
+    "project_id": "quizzapp-b8d47",
+    "storage_bucket": "quizzapp-b8d47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755567058800:android:a6bc9a7bf1c134f16979b5",
+        "android_client_info": {
+          "package_name": "co.appbrewery.quizzler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755567058800-q4a3g2tf9p98hmaroll8g88j7itvf9s5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyjAVQ6t_RsMqKFBvARz6VwT-uUbJHDVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755567058800-q4a3g2tf9p98hmaroll8g88j7itvf9s5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
